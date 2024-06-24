@@ -30,7 +30,7 @@
                 </ul>
             </nav>
             <div class="btn-contato">
-
+                <a href="https://api.whatsapp.com/send?phone=55119593656&text=Ol%C3%A1,%20em%20que%20posso%20te%20ajudar?" target="_blank"><button>contato</button></a>
             </div>
             <div class="btn-abrir-menu" id="abrir-menu">
                 <i class="bi bi-list-nested"></i>
@@ -70,6 +70,7 @@
                 </div>
             </div>
         </section>
+        <!--seção ondas-->
 
         <section class="especialidades" id="especialidades">
             <div class="interface">
@@ -136,14 +137,15 @@
         <section class="formulario">
             <div class="interface">
                 <h2 class="title animate-form">fala <span>comigo</span></h2>
-                <form action="php/form.php" method="post">
+                <form action="https://formsubmit.co/lucasstarttech@gmail.com" method="post">
                     <label>Nome</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off">
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" autocomplete="off" required>
                     <label>Email</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
+                    <input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off" required>
                     <label>Celular</label>
                     <input type="tel" name="telefone" id="tel" placeholder="Digite seu celular">
                     <textarea name="txt-area" id="text-area" placeholder="Digite sua mensagem"></textarea>
+                    <input type="hidden" name="_next" value="https://http://127.0.0.1:5500/obrigado.html">
                     <div class="btn-enviar">
                         <button type="submit" class="btn-enviar">Enviar</button>
                     </div>
